@@ -40,6 +40,18 @@ extension MainWindowController {
       playerCore.frameStep(backwards: true)
     }
   }
+  
+  @IBAction func replaySubtitles(_ sender: NSMenuItem) {
+    let secondsBack = 5
+    
+    playerCore.setTrack(1, forType: .sub)
+    playerCore.seek(relativeSecond: Double(-1*secondsBack), option: .relative)
+    
+    let time = DispatchTime.now() + .seconds(secondsBack)
+    DispatchQueue.main.asyncAfter(deadline: time) {
+      self.playerCore.setTrack(0, forType: .sub)
+    }
+  }
 
 
   @IBAction func menuJumpToBegin(_ sender: NSMenuItem) {

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
     </dependencies>
@@ -130,6 +130,7 @@
                             <menuItem title="Previous Frame" tag="1" alternate="YES" keyEquivalent="" id="oxF-BB-lBy">
                                 <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
                             </menuItem>
+                            <menuItem title="Replay with Subtitles" tag="1" keyEquivalent="r" id="Sgg-rG-mOb"/>
                             <menuItem title="Jump to beginning" id="2Ya-3g-1hy">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                             </menuItem>
@@ -469,6 +470,7 @@
                 <outlet property="quickSettingsAudio" destination="43n-Ed-5kT" id="Pq5-b6-o5G"/>
                 <outlet property="quickSettingsSub" destination="8y7-Cy-lKT" id="Dh8-CP-Coh"/>
                 <outlet property="quickSettingsVideo" destination="2t8-Ot-yoO" id="Bey-Dn-4dY"/>
+                <outlet property="replaySubtitles" destination="Sgg-rG-mOb" id="MCs-Nb-pSm"/>
                 <outlet property="resetAudioDelay" destination="H3d-jR-YCr" id="Qx9-n3-F90"/>
                 <outlet property="resetSubDelay" destination="SLr-6g-Mgh" id="8oW-hm-TNq"/>
                 <outlet property="resetTextSize" destination="P1a-ot-P31" id="fJk-GP-GBM"/>

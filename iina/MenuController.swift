@@ -24,6 +24,7 @@ class MenuController: NSObject, NSMenuDelegate {
   @IBOutlet weak var nextFrame: NSMenuItem!
   @IBOutlet weak var backward: NSMenuItem!
   @IBOutlet weak var previousFrame: NSMenuItem!
+  @IBOutlet weak var replaySubtitles: NSMenuItem!
   @IBOutlet weak var jumpToBegin: NSMenuItem!
   @IBOutlet weak var jumpTo: NSMenuItem!
   @IBOutlet weak var screenShot: NSMenuItem!
@@ -109,6 +110,7 @@ class MenuController: NSObject, NSMenuDelegate {
     nextFrame.action = #selector(MainWindowController.menuStepFrame(_:))
     backward.action = #selector(MainWindowController.menuStep(_:))
     previousFrame.action = #selector(MainWindowController.menuStepFrame(_:))
+    replaySubtitles.action = #selector(MainWindowController.replaySubtitles(_:))
     jumpToBegin.action = #selector(MainWindowController.menuJumpToBegin(_:))
     jumpTo.action = #selector(MainWindowController.menuJumpTo(_:))
 
